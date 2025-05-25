@@ -64,3 +64,4 @@ class TebexClaim(commands.Cog):
 
 async def setup(bot):
     await bot.add_cog(TebexClaim(bot))
+    return True
