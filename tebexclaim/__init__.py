@@ -62,5 +62,5 @@ class TebexClaim(commands.Cog):
         except Exception as e:
             await ctx.send(f"Fehler beim Verarbeiten: {e}")
 
-def setup(bot):
-    bot.add_cog(TebexClaim(bot))
+async def setup(bot):
+    await bot.add_cog(TebexClaim(bot))
